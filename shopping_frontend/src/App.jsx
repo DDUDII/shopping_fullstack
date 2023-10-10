@@ -11,9 +11,9 @@ import Footer from './layout/Footer';
 // outlet은 자식 컴포넌트 경로에 따라 바뀜 (밑에 layout으로 넘겨주고 loginpage registerpage 이런식으로)
 function Layout(){
   return (
-    <div>
+    <div className='flex flex-col h-screen justify-between'>
       <Navbar />
-      <main>
+      <main className='mb-auto w-10/12 max-w-4xl mx-auto'>
         <Outlet />  
       </main>
       <Footer/>
